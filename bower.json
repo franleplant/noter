@@ -1,0 +1,28 @@
+{
+  "name": "noter",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "franleplant <franleplant@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gh3": "~1.0.3",
+    "underscore": "~1.6.0",
+    "angular-route": "~1.2.16",
+    "angular": "~1.2.16",
+    "angular-sanitize": "~1.2.16"
+  }
+}

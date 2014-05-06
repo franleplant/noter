@@ -1,0 +1,45 @@
+<html ng-app="noter">
+<head>
+	<title>Noter</title>
+</head>
+	
+	<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+	<link rel="stylesheet" type="text/css" href="src/main.css">
+
+
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  asciimath2jax: {
+	    delimiters: [['$','$'], ['`','`']]
+	  }
+	});
+	</script>
+
+	<script src="//cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+
+
+<body>
+
+	<ng-include src="src/header.tpl.html"></ng-include>
+
+	<ng-view></ng-view>	
+
+
+	<ng-include src="src/footer.tpl.html"></ng-include>
+
+
+	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="src/vendor/underscore/underscore.js"></script>
+	<script src="src/vendor/gh3/gh3.js"></script>
+	<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+	<script src="src/vendor/ace/src-min-noconflict/ace.js" charset="utf-8"></script>
+
+	<script src="src/vendor/angular/angular.js"></script>
+	<script src="src/vendor/angular-route/angular-route.js"></script>
+	<script src="src/vendor/angular-sanitize/angular-sanitize.js"></script>
+	<script src="src/main.js"></script>
+	
+</body>
+</html>
+
+
