@@ -70,7 +70,31 @@ app.controller('AppCtrl', function ($scope, $routeParams, $http, $sce, $interval
 
 
 
+app.controller('NavigatorCtrl', function ($scope, $location) {
 
+	$scope.url = $scope.url || "https://gist.github.com/franleplant/386ddfa1b663cd2f9f19#file-n2-md";
+
+	this.parse_and_redirect = function () {
+		var url = $scope.url;
+		var r = /(?:http(?:s{0,1}))(?:\:\/\/)(?:gist\.github\.com\/)([^\/]*)(?:\/)([^#]*)(?:#)(.*)$/;
+		var parsed = url.match(r);
+
+
+		var user = parsed[1];
+		var gist_id = parsed[2];
+		var raw_file_name = parsed[3];
+		var file_name = raw_file_name.match(/(?:file-)([^-]*)(-md)$/)[1] + '.md';
+
+		console.log(user, gist_id, file_name);
+
+
+		var l = '/gist/' + gist_id + '/' + file_name;
+		console.log(l);
+		$location.path(l);
+
+	}
+
+});
 
 
 //dynamic rendering math http://docs.mathjax.org/en/latest/typeset.html
