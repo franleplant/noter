@@ -1,23 +1,10 @@
-body > div,
-body > button {
-	float: left;
+header, footer, .navigator, #content {
+	border-bottom: 1px solid #ccc;
 }
 
-    #editor {
-        width: 500px;
-        height: 400px;
-    }
-
-    #output {
-
-    }
 
 
- button	{
-
- }
-
- .highlight.hljs {
+.highlight.hljs {
  	background-color: #f8f8f8;
 	border: 1px solid #ddd;
 	font-size: 13px;
@@ -25,6 +12,6 @@ body > button {
 	overflow: auto;
 	padding: 6px 10px;
 	border-radius: 3px;
- }
+}
 
  /* https://gist.github.com/tuzz/3331384*/
