@@ -1,6 +1,8 @@
-header, footer, .navigator, #content {
-	border-bottom: 1px solid #ccc;
+
+body {
+	margin: 0;
 }
+
 
 
 
@@ -16,10 +18,85 @@ header, footer, .navigator, #content {
 
  /* https://gist.github.com/tuzz/3331384*/
 
+
+
+ .navigator {
+width: 80%;
+margin: 0 auto;
+border: 2px solid rgba(204, 204, 204, 0.44);
+border-radius: 4px;
+padding: 20px 40px;
+box-sizing: border-box;
+}
+
  .navigator ul > li {
  	cursor: pointer;
  	display: block;
- 	list-style: none;
- 	border-top: 1px solid black;
- 	border-bottom: 1px solid #ccc;
+ 	text-decoration: underline;
  }
+
+.navigator legend {
+	float: left;
+	margin-right: 15px;
+	line-height: 25px;
+}
+
+.navigator input {
+	width: 50%;
+}
+
+
+
+header {
+	background-color: rgba(213, 230, 208, 0.24);
+	margin-bottom: 20px;
+}
+
+header > h1 {
+top: 0px;
+text-align: center;
+width: 50px;
+color: #FF0DFB;
+margin: 0px;
+
+}
+
+header > h1 > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header .navigator {
+
+}
+
+
+
+footer {
+	background-color: rgba(213, 230, 208, 0.24);
+	color: #FF0DFB;
+	text-align: center;
+	padding: 15px 0;
+}
+
+#main {
+	padding: 0px 30px;
+}
+
+#main h1 {
+
+color: #FF0DFB;
+}
+
+
+#content {
+	border: 2px solid rgba(204, 204, 204, 0.44);
+border-radius: 4px;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+padding: 20px 40px;
+box-sizing: border-box;
+}
