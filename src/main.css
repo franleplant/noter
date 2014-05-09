@@ -15,3 +15,11 @@ header, footer, .navigator, #content {
 }
 
  /* https://gist.github.com/tuzz/3331384*/
+
+ .navigator ul > li {
+ 	cursor: pointer;
+ 	display: block;
+ 	list-style: none;
+ 	border-top: 1px solid black;
+ 	border-bottom: 1px solid #ccc;
+ }

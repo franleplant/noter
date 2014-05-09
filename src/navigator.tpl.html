@@ -1,11 +1,14 @@
 <div class="navigator" ng-controller="NavigatorCtrl as nav">
 
-	<legend>Insert Gist File Permalink</legend>
+	<legend>Insert Gist url</legend>
 	<input style="width: 89%;" type="text" ng-model="url">
 
-	<button ng-click="nav.parse_and_redirect()">Go!</button>
+	<button ng-click="nav.go()">Go!</button>
 
-	<p>More about this comming soon</p>
-	<p>Please name you gist with all lower case and no spaces</p>
+	<p>File navigator</p>
+	<ul>
+		<li ng-repeat="file in files" ng-click="nav.go_to_file(file)">{{file.filename}}</li>
+
+	</ul>
 
 </div>
